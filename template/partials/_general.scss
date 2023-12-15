@@ -1,0 +1,25 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:small;
+}
+
+.rn_container{
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    @include button();
+}
+
+@media screen and (max-width:1024px) {
+    .rn_container{
+        width: $container-mobile;
+    }
+    
+}

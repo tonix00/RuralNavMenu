@@ -1,0 +1,2 @@
+
+	<body class="login-background">

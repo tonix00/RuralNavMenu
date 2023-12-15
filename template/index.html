@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSURANCE | RuralNet V3</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body>
+    <nav>
+        <div class="rn_container">
+
+            <div id="nav_left">
+                <img src="./assets/images/logo_med.png" id="branding">
+
+                <ul class="menu">
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link"><span>Member Transactions</span> <i class='bx bxs-down-arrow'></i></a>
+                        <ul class="submenu">
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link">Bills Payment <i class='bx bxs-chevrons-right' ></i></i></a> 
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_EnterBillsPayment">Enter Bills Payment</a></li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ViewBillsPayment">View Bills Payment</a></li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ViewBillsPayment">View Billers</a></li>
+                                </ul>    
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Top-Up</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_EnterTopUp">Enter Top-Up</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ViewTopUp">View Top-Up</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Book Flights</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BKO_BookFlights">Book Flights</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BKO_BookFlightsSC">Book Flights (Senior Citizen)</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BKO_ViewFlightBookings">View Flight Bookings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Settlement</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupFunding">Set-up Funding</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewFunding">View Funding</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewMemberLedger">View Member Wallet</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewDailyTransactions">View Daily Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewTransactionsForSlip">Reprint Collection Slip</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Sell Insurance</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_SelectProduct">Sell Insurance</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_SelectProduct2">Sell Insurance (No Validations)</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_ReprintCSCOC">Reprint POC/COC/BIR</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_SearchTrnToModify">Modify Insurance</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_SearchTrnToCancel">Cancel Insurance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Insurance Claims</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INC_SelectClaim">Claims</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INC_ViewClaims">View Claims</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Insurance Mass Upload</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_MassUpload3">Mass Upload Generic</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_ViewMassUpload">View Mass Upload</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_MassUpload3">Mass Upload Generic</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Monthly Insurance</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_InsuranceMonthlyPayment">Pay Monthly Insurance</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_ViewPaidMonthlyAmortization">View Payments</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_ViewMonthlyAmortization">View Monthly Amortization</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_ViewMonthlyPaymentDetails">View Monthly Payment Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Insurance Reports</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_SetupStaff">Add Referrer</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_ViewStaff">View Referrers</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INR_ViewExpiringPolicies">View Expiring Policies</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_ViewInsuranceProduct">View Insurance Product</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li  class="has-dropdown">
+                        <a href="#" class="menu-link">Customer Service <i class='bx bxs-down-arrow'></i></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" class="menu-link"><span>Insurance</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INC_SelectClaim">Claims</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INC_ViewClaims">View Claims</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INC_SearchClaimsToResetDocs">Reset Claim Docs to Upload</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link">Back-Office <i class='bx bxs-down-arrow'></i></a>
+                        <ul class="submenu">
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link">Remittance<span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_ViewRemittance">View Remittance</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_ViewMemberTransactions">View Member Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_GenerateReports">Generate Remittance Reports</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_RepostPayOut">Repost Pay-Out Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_GenerateBSPReports">Generate BSP Reports</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Funding</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewFunding">View Funding</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ApproveFunding">Approve Funding</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Fund Transfers</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupFundTransfer">Set-up Fund Transfer</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewFundTransfer">View Fund Transfer</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Adjustments</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupAdjustments">Set-up Adjustments</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewAdjustments">View Adjustments</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Transaction Reversals</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupReversals">Set-up Reversals</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewReversals">View Reversals</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Settlement</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ConsolidateAndBill">Consolidation & Billing</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_GenerateSettlement">Generate Transactions Report</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_GenerateTransactions">Generate Summary Report</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_GenerateRevShare">Generate Revenue Share Report</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewMemberLedger">View Member Wallet</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewMemberLedger2">View Settlement Ledger</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewDailyTransactions">View Daily Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewTransactionsForSlip">Reprint Collection Slip</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewSubsidiaryLedger">View Subsidiary Ledger</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ChangeStatus">Change Business Status</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Bills Payment</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_CheckBalance">Check Balances</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_EnterBillsPaymentBackOffice">Enter Bills Payment (BO)</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_InquireCISTrn">Inquire CIS Transaction</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_CreateSettleLedger">Create Settlement Ledger</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ReCalculateECPAYTransaction">Re-Calculate ECPay Transaction</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ChangePasswordECPAY">Change Password (ECPAY)</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ValidateAccountECPAY">Validate Account (ECPAY)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Parameters</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_SetupBanner">Set-up Banner</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Insurance</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_CreateInsuranceSettleLedger">Post Transaction Settlement</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_SearchCustomerProfile">Search Customer Profile</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link">I.T. Staff <i class='bx bxs-down-arrow'></i></a>
+                        <ul class="submenu">
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Parameters</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_SetupClassTypes">Set-up Classification Types</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_ViewClassTypes">View Classification Types</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_SetupClassCodes">Set-up Classification Codes</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_ViewClassCodes">View Classification Codes</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_SetupAreaCodes">Set-up Area Codes</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_ViewAreaCodes">View Area Codes</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_SetupBanner">Set-up Banner</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=PAR_ViewBanners">View Banners</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Marketing</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_SetupClients">Setup Client Information</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_ViewClients">View Client Information</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_ViewCreatedClients">View Clients by Date Created</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_SetupBranches">Setup Branches</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_UploadBranches">Upload Branches</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_ViewBranches">View Branches</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_ViewCreatedBranches">View Branches by Date Created</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_SetupUsers">Setup Users</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_UploadUsers">Upload Users</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_ViewUsers">View Users</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=MKT_ViewCreatedUsers">View Users by Date Created</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Insurance</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INP_ProductDefinition">Product Definition</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_InsuranceSales">Sales</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INC_SelectClaim">Claims</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INR_InsuranceReports">Reports</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INU_InsuranceUtilities">Utilities</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Remittance</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_SendRemittance">Send Remittance</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_PayOutRemittance">Pay-Out Remittance</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_AmendRemittance">Amend Beneficiary</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_RefundRemittance">Refund Remittance</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMT_RepostPayOut">Repost Pay-Out Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMR_ViewMemberTransactions">View Remittance Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=RMR_ViewRevShare">View Remittance RevShare</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Biller Enrollment</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul  class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_EnrollBillers">View Billers</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ViewBillers">View Billers</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_UpdateECPBillers">Update ECPay Billers</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_EditECPBillers">Edit ECPay Billers</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_ViewECPBillers">View ECPay Billers</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_UploadToolTips">Upload Tool Tips</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>BillsPay/Top-Up/Local</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_EnterBillsPayment">Enter Bills Payment</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_CheckBalance">Check Balances</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_EnterTopUp">Enter Top-Up</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_UploadLocalBills">Upload Local Bills</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BIL_DownloadLocalCollections">Download Local Collections</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BXR_ViewMemberTransactions">View BayadExpress Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BXR_ViewRevShare">View BayadExpress RevShare</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Book Flights</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BKO_BookFlights"></a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BKO_BookFlightsSC">Book Flights (Senior Citizen)</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BKO_EnterRoutes">Enter Routes</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=BKO_ViewRoutes">View Flight Routes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Credit Info</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=CIB_Blef">BLEF Inquiry</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=CIB_KYC">KYC Inquiry</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Settlement Transactions</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupFunding">Set-up Funding</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ApproveFunding">Approve Funding</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewFunding">View Funding</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupFundTransfer">Set-up Fund Transfer</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewFundTransfer">View Fund Transfer</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupAdjustments">Set-up Adjustments</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewAdjustments">View Adjustments</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupReversals">Set-up Reversals</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewReversals">View Reversals</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupPayOut">Set-up PayOut</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_DayEndPayOut">Day-End PayOut</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_UploadPayOutStatus">Upload Pay-Out Status</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ViewPayOut">View PayOut</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_SetupBankAccts">Enroll Bank Accounts</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_ApproveBankAccts">Approve Bank Accounts</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SET_EndOfDay">Process End-of-Day</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Settlement Reports</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SER_ViewDailyTransactions">View Daily Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SER_ViewMemberSettlement">View Member Settlement</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SER_ViewSettlementTransactions">View Settlement Transactions</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SER_ViewSettlementSummary">View Settlement Summary</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SER_ViewMemberWallet">View Member Wallet</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link">SaaS Module <i class='bx bxs-down-arrow'></i></a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" class="menu-link"><span>Billing Rates</span> <i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SAS_SetupBillingRates">Setup Billing Rates</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=SAS_ViewBillingRates">View Billing Rates</a>
+                                    </li>
+                                </ul>                                           
+                            </li>
+                            <li>
+                                <a class="navbar-item" href="MenuForm.htm?programName=SAS_UpdateBillingControl">Set ON/OFF Switch</a>
+                            </li>
+                        </ul>    
+                    </li>  
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link">Forms and Manuals <i class='bx bxs-down-arrow'></i></a>
+                        <ul class="submenu">
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Mass Upload</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_MassUploadTemplate">Mass Upload Template</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>Application Forms</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_StandardApplForm">Standard Application Form (1/4)</a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INS_StandardFamApplForm">Standard Application Form - Family (1/4)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#" class="menu-link"><span>GENERALI Forms</span><i class='bx bxs-chevrons-right' ></i></i></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a class="navbar-item" href="MenuForm.htm?programName=INC_GenHIBForm">Hospital Income Benefit (Gen)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>  
+                </ul>
+            </div>
+            
+            <div id="nav_right">
+                
+                
+                <ul class="menu">
+                    <li class="has-dropdown">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxs-user'></i>
+                            <span>DESIGNEX INTERNATIONAL DESIGNEX RNT - HED</span></i>
+                        </a>
+                        
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" class="menu-link">
+                                    <i class='bx bxs-user'></i> 
+                                    <span class="m_content">My Account</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-link">
+                                    <i class='bx bx-log-out'></i> 
+                                    <span class="m_content">Sign Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div>You are currently on TEST mode.</div>
+
+                <ul class="menu">
+                    <li class="has-dropdown menu_right">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxs-info-circle'></i> 
+                            <i class='bx bx-chevron-down' class="menu_right_i" ></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <div id="notif">
+                                    <span>Notifications</span>
+                                    <ul>
+                                        <li>notification 1</li>
+                                        <li>notification 2</li>
+                                        <li>notification 3</li>
+                                        <li>notification 4</li>
+                                    </ul>
+                                    <button class="btn">View All</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="rn_container">
+            FORTUNELIFE GTLI (KAPAMILYA STANDARD)
+        </div>
+    </div>    
+   
+</body>
+</html>
